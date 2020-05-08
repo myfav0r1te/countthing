@@ -1,0 +1,29 @@
+<html>
+<head>
+    <style>
+        h1{
+            font-size:40px;
+            font-weight:bold;
+            margin-top:20px;
+            margin-left:40px;
+            color: #D1B2FF;
+            border: 2px solid #B5B2FF;
+        }
+        a{
+            margin-left:40px;
+        }
+        form{
+            margin-left:40px;
+        }
+    </style>
+</head>
+<h1>여기에서 단어 개수를 세어 보세요!</h1>
+
+<a href="{%url 'about'%}">ABOUT</a>
+
+<form action="{%url 'result'%}">
+    <textarea cols="40" rows="10" name="fulltext"></textarea>
+    <br>
+    <input type="submit" value="Count!">
+</form>
+</html>
